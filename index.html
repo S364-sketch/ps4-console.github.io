@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="img/logo.png" class="logo" />
+        <nav>
+          <ul id="menulist">
+            <li><a href="">Game Controller</a></li>
+            <li><a href="">VR Accessories</a></li>
+            <li><a href="">Media Remotes</a></li>
+            <li><a href="">Other</a></li>
+          </ul>
+        </nav>
+        <img src="img/menu.png" class="menu" onclick="togglemenu()">
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <div class="content">
+            <h2>PS4 V2 <br />Dualshock 4</h2>
+            <div class="vertical"></div>
+            <h3>Wireless Controller for PlayStation 4</h3>
+            <small>(Compatible Generic)</small>
+            <h4>$32.50</h4>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="main">
+            <img src="img/controller.png" class="image" />
+            <div class="box">
+              <img src="img/add.png" class="add" >
+              <p>Add to Card</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+      <img src="img/fb.png" class="links">
+      <img src="img/ig.png" class="links">
+      <img src="img/tw.png" class="links">
+      </div>
+    </div>
+
+    <script>
+    var  menulist= document.getElementById("menulist");
+    menulist.style.maxHeight="0px";
+    function togglemenu(){
+        if( menulist.style.maxHeight=="0px"){
+             menulist.style.maxHeight="130px"
+        }
+        else{
+             menulist.style.maxHeight="0px";
+        }
+    }
+    </script>
+  </body>
+</html>
